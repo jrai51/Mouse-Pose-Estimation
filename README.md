@@ -6,9 +6,9 @@ Directory `single_instance_n284` contains the trained model files. `predictions`
 
 Commands in order:
 
-`mamba activate sleap`
+1. `mamba activate sleap`
 
-`sleap-track -m "single_instance_n284" -o 'predictions/outfile_name.slp' 'trial_vids/infile_name.mp4' `
+2. `sleap-track -m "single_instance_n284" -o 'predictions/outfile_name.slp' 'trial_vids/infile_name.mp4' `
 
-`sleap-convert 'predictions/outfile_name.slp' --format 'outfile_name.csv' `
+3. `sleap-convert 'predictions/outfile_name.slp' --format 'outfile_name.csv' `
 
