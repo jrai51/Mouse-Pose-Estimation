@@ -26,12 +26,12 @@ def preprocess_data(data):
 def save_to_csv(df, csv_file):
     df.to_csv(csv_file, index=False)
 
-file_path = '/Users/aryankhimani/Downloads/Mouse-Pose-Estimation-main/H5 Files/2023-06-16_Trial 1_cropped_20fps_analysis.h5'
+file_path = '/path/to/Mouse-Pose-Estimation-main/H5 Files/2023-06-16_Trial 1_cropped_20fps_analysis.h5'
 data = load_hdf5_data(file_path)
 
 # Process the data
 df = preprocess_data(data)
 
 # Save the cleaned data to a CSV file
-csv_file_path = '/Users/aryankhimani/Downloads/Mouse-Pose-Estimation-main/pred_points_data.csv'
+csv_file_path = '/path/to/Mouse-Pose-Estimation-main/pred_points_data.csv'
 save_to_csv(df, csv_file_path)
