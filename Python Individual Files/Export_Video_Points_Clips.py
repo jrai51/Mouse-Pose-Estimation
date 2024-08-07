@@ -3,11 +3,11 @@ import pandas as pd
 import numpy as np
 
 # Load data from CSV
-data = pd.read_csv('/Users/aryankhimani/Downloads/Mouse-Pose-Estimation-main/pred_points_data.csv')
+data = pd.read_csv('/path/to/Mouse-Pose-Estimation-main/pred_points_data.csv')
 
 # Initialize variables
-video_path = '/Users/aryankhimani/Downloads/Mouse-Pose-Estimation-main/trial_vids/mouse_trial2.mp4'
-output_video_path = '/Users/aryankhimani/Downloads/Mouse-Pose-Estimation-main/output_video_with_points.mp4'
+video_path = '/path/to/Mouse-Pose-Estimation-main/trial_vids/mouse_trial2.mp4'
+output_video_path = '/path/to/Mouse-Pose-Estimation-main/output_video_with_points.mp4'
 video_capture = cv2.VideoCapture(video_path)
 fps = video_capture.get(cv2.CAP_PROP_FPS)
 image_size = (int(video_capture.get(cv2.CAP_PROP_FRAME_WIDTH)), int(video_capture.get(cv2.CAP_PROP_FRAME_HEIGHT)))
