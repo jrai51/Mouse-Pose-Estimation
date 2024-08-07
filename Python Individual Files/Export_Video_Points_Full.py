@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 
 # Load data from CSV
-data = pd.read_csv('/Users/aryankhimani/Downloads/Mouse-Pose-Estimation-main/CSV Files/2023-06-16_Trial 1_cropped_20fps_analysis.csv')
+data = pd.read_csv('/path/to/Mouse-Pose-Estimation-main/CSV Files/2023-06-16_Trial 1_cropped_20fps_analysis.csv')
 
 # Configurable starting frame and initial PoGS
 starting_frame = 327  # Set the starting frame here
@@ -11,7 +11,7 @@ initial_PoGS = 1270  # Set the initial PoGS here
 
 # Initialize variables
 video_path = '/Volumes/okamoto_lab/shared/4 Jay/behaviour/in vivo imaging/2023-06-16_Trial 1_cropped_20fps.mp4'
-output_video_path = '/Users/aryankhimani/Downloads/Mouse-Pose-Estimation-main/output_2023-06-16_Trial_1_video_with_points.mp4'
+output_video_path = '/path/to/Mouse-Pose-Estimation-main/output_2023-06-16_Trial_1_video_with_points.mp4'
 video_capture = cv2.VideoCapture(video_path)
 fps = video_capture.get(cv2.CAP_PROP_FPS)
 image_size = (int(video_capture.get(cv2.CAP_PROP_FRAME_WIDTH)), int(video_capture.get(cv2.CAP_PROP_FRAME_HEIGHT)))
