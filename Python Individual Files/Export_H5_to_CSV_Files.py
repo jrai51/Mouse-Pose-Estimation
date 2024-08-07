@@ -31,6 +31,6 @@ def process_h5_files(input_dir, output_dir):
             
             save_to_csv(data['pred_points'], csv_file_path)
 
-input_dir = '/Users/aryankhimani/Downloads/Mouse-Pose-Estimation-main/H5 Files'
-output_dir = '/Users/aryankhimani/Downloads/Mouse-Pose-Estimation-main/CSV Files'
+input_dir = '/path/to/Mouse-Pose-Estimation-main/H5 Files'
+output_dir = '/path/to/Mouse-Pose-Estimation-main/CSV Files'
 process_h5_files(input_dir, output_dir)
