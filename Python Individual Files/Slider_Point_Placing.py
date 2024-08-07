@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 
 # Load data from CSV
-data = pd.read_csv('/Users/aryankhimani/Downloads/Mouse-Pose-Estimation-main/CSV Files/2023-06-16_Trial 1_cropped_20fps_analysis.csv')
+data = pd.read_csv('/path/to/Mouse-Pose-Estimation-main/CSV Files/2023-06-16_Trial 1_cropped_20fps_analysis.csv')
 
 # Initialize variables
 window_name = 'Point Viewer'
