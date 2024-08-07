@@ -16,8 +16,8 @@ def save_to_csv(data, csv_file):
         for row in data:
             writer.writerow(row)
 
-file_path = '/Users/aryankhimani/Downloads/Mouse-Pose-Estimation-main/H5 Files/2023-06-16_Trial 1_cropped_20fps_analysis.h5'
+file_path = '/path/to/Mouse-Pose-Estimation-main/H5 Files/2023-06-16_Trial 1_cropped_20fps_analysis.h5'
 data = load_hdf5_data(file_path)
 
-csv_file_path = '/Users/aryankhimani/Downloads/Mouse-Pose-Estimation-main/pred_points_data.csv'
+csv_file_path = '/path/to/Mouse-Pose-Estimation-main/pred_points_data.csv'
 save_to_csv(data['pred_points'], csv_file_path)
