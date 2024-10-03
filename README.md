@@ -28,13 +28,17 @@ Run the Docker interactive container:
 
 At this point, you should have created an analysis file in the docker container. To copy this analysis file, open a new terminal window, and use the `docker ps` and `docker cp` commands as outline below to copy the analysis file in your container to your host computer files.
 
-First, identify the ID or name of the container you want to save changes from by using the docker ps -a command: `docker ps -a`
+First, identify the ID or name of the container you want to save changes from by using the docker ps -a command:
+
+`docker ps -a`
 
 Then use copy the file using: 
+
 `docker cp container_id_or_name:/home/user/predictions/analysis_outfile_name.h5 /path/to/repository/predictions/`
 
 >To render a video showing the pose estimation:
 In the docker container, run command:
+>
 `sleap-render predictions/analysis_outfile_name.h5 --marker_size 2 --crop 100,100`
 
 This will create a video file within the docker container. You can use the `docker cp` command to copy the video to your host computer files.
